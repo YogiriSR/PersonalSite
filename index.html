@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Web服务器测试页面</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 10%;
+    }
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+    }
+    h1 {
+      color: #4CAF50;
+    }
+    p {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Web服务器运行正常</h1>
+    <p>如果你能看到这个页面，说明你的Web服务器已经成功启动。</p>
+    <p>页面时间：<span id="time"></span></p>
+  </div>
+  <script>
+    document.getElementById('time').textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
